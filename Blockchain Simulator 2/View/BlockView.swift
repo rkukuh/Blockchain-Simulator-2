@@ -21,7 +21,6 @@ struct BlockView: View {
 
             VStack(alignment: .leading) {
                 Text("Data")
-                    .font(.headline)
                 TextEditor(text: $data)
                     .frame(minHeight: 100)
                     .onChange(of: data) { updateHash() }
