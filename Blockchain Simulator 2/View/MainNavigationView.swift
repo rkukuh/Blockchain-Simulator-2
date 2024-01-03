@@ -22,7 +22,7 @@ struct MainNavigationView: View {
                 case .hash:
                     HashView()
                 case .block:
-                    Text("Block View")
+                    BlockView()
                 case .blockchain:
                     Text("Blockchain View")
                 case .distributed:

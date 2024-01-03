@@ -17,6 +17,7 @@
 		4AAF1DFD2B4525700064A192 /* HashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAF1DFC2B4525700064A192 /* HashView.swift */; };
 		4AAF1E012B4527E00064A192 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAF1E002B4527E00064A192 /* MenuItem.swift */; };
 		4AAF1E052B45289B0064A192 /* HashAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAF1E042B45289B0064A192 /* HashAlgorithm.swift */; };
+		4AAF1E0B2B45373F0064A192 /* BlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAF1E0A2B45373F0064A192 /* BlockView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		4AAF1DFC2B4525700064A192 /* HashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashView.swift; sourceTree = "<group>"; };
 		4AAF1E002B4527E00064A192 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		4AAF1E042B45289B0064A192 /* HashAlgorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashAlgorithm.swift; sourceTree = "<group>"; };
+		4AAF1E0A2B45373F0064A192 /* BlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 			children = (
 				4AAF1DD12B4525020064A192 /* MainNavigationView.swift */,
 				4AAF1DFC2B4525700064A192 /* HashView.swift */,
+				4AAF1E0A2B45373F0064A192 /* BlockView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 				4AAF1DD22B4525020064A192 /* MainNavigationView.swift in Sources */,
 				4AAF1DD02B4525020064A192 /* Blockchain_Simulator_2App.swift in Sources */,
 				4AAF1E012B4527E00064A192 /* MenuItem.swift in Sources */,
+				4AAF1E0B2B45373F0064A192 /* BlockView.swift in Sources */,
 				4AAF1E052B45289B0064A192 /* HashAlgorithm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
