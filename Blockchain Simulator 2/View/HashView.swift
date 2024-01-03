@@ -9,9 +9,9 @@ import SwiftUI
 import CryptoKit
 
 struct HashView: View {
-    @State private var inputText: String = ""
+    @State private var inputText: String = "You may change this text and see for yourself."
     @State private var selectedAlgorithm: HashAlgorithm = .sha256
-    @State private var hashedText: String = ""
+    @State private var hashedText: String = SHA256.hash(data: Data("You may change this text and see for yourself.".utf8)).compactMap { String(format: "%02x", $0) }.joined()
     
     var body: some View {
         VStack {
@@ -24,7 +24,7 @@ struct HashView: View {
             }
             .pickerStyle(SegmentedPickerStyle())
             Button("Hash It!") {
-                hashInput()
+                hashedText = hash(input: inputText, algorithm: selectedAlgorithm)
             }
             Text(hashedText)
         }
@@ -32,12 +32,12 @@ struct HashView: View {
         .navigationTitle("Hash")
     }
     
-    private func hashInput() {
-        switch selectedAlgorithm {
+    private func hash(input: String, algorithm: HashAlgorithm) -> String {
+        switch algorithm {
         case .sha256:
-            hashedText = SHA256.hash(data: Data(inputText.utf8)).compactMap { String(format: "%02x", $0) }.joined()
+            return SHA256.hash(data: Data(input.utf8)).compactMap { String(format: "%02x", $0) }.joined()
         case .sha512:
-            hashedText = SHA512.hash(data: Data(inputText.utf8)).compactMap { String(format: "%02x", $0) }.joined()
+            return SHA512.hash(data: Data(input.utf8)).compactMap { String(format: "%02x", $0) }.joined()
         }
     }
 }
