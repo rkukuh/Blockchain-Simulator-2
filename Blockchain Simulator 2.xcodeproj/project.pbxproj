@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		4AAF1DD02B4525020064A192 /* Blockchain_Simulator_2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAF1DCF2B4525020064A192 /* Blockchain_Simulator_2App.swift */; };
-		4AAF1DD22B4525020064A192 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAF1DD12B4525020064A192 /* ContentView.swift */; };
+		4AAF1DD22B4525020064A192 /* MainNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAF1DD12B4525020064A192 /* MainNavigationView.swift */; };
 		4AAF1DD42B4525030064A192 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AAF1DD32B4525030064A192 /* Assets.xcassets */; };
 		4AAF1DD72B4525030064A192 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AAF1DD62B4525030064A192 /* Preview Assets.xcassets */; };
 		4AAF1DE22B4525040064A192 /* Blockchain_Simulator_2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAF1DE12B4525040064A192 /* Blockchain_Simulator_2Tests.swift */; };
 		4AAF1DEC2B4525040064A192 /* Blockchain_Simulator_2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAF1DEB2B4525040064A192 /* Blockchain_Simulator_2UITests.swift */; };
 		4AAF1DEE2B4525040064A192 /* Blockchain_Simulator_2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAF1DED2B4525040064A192 /* Blockchain_Simulator_2UITestsLaunchTests.swift */; };
+		4AAF1DFD2B4525700064A192 /* HashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAF1DFC2B4525700064A192 /* HashView.swift */; };
+		4AAF1E012B4527E00064A192 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAF1E002B4527E00064A192 /* MenuItem.swift */; };
+		4AAF1E052B45289B0064A192 /* HashAlgorithms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAF1E042B45289B0064A192 /* HashAlgorithms.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,7 @@
 /* Begin PBXFileReference section */
 		4AAF1DCC2B4525020064A192 /* Blockchain Simulator 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Blockchain Simulator 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AAF1DCF2B4525020064A192 /* Blockchain_Simulator_2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blockchain_Simulator_2App.swift; sourceTree = "<group>"; };
-		4AAF1DD12B4525020064A192 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4AAF1DD12B4525020064A192 /* MainNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationView.swift; sourceTree = "<group>"; };
 		4AAF1DD32B4525030064A192 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4AAF1DD62B4525030064A192 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4AAF1DD82B4525030064A192 /* Blockchain_Simulator_2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Blockchain_Simulator_2.entitlements; sourceTree = "<group>"; };
@@ -45,6 +48,9 @@
 		4AAF1DE72B4525040064A192 /* Blockchain Simulator 2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Blockchain Simulator 2UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AAF1DEB2B4525040064A192 /* Blockchain_Simulator_2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blockchain_Simulator_2UITests.swift; sourceTree = "<group>"; };
 		4AAF1DED2B4525040064A192 /* Blockchain_Simulator_2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blockchain_Simulator_2UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4AAF1DFC2B4525700064A192 /* HashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashView.swift; sourceTree = "<group>"; };
+		4AAF1E002B4527E00064A192 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		4AAF1E042B45289B0064A192 /* HashAlgorithms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashAlgorithms.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +102,8 @@
 			isa = PBXGroup;
 			children = (
 				4AAF1DCF2B4525020064A192 /* Blockchain_Simulator_2App.swift */,
-				4AAF1DD12B4525020064A192 /* ContentView.swift */,
+				4AAF1E022B4528620064A192 /* Model */,
+				4AAF1E032B4528760064A192 /* View */,
 				4AAF1DD32B4525030064A192 /* Assets.xcassets */,
 				4AAF1DD82B4525030064A192 /* Blockchain_Simulator_2.entitlements */,
 				4AAF1DD52B4525030064A192 /* Preview Content */,
@@ -127,6 +134,24 @@
 				4AAF1DED2B4525040064A192 /* Blockchain_Simulator_2UITestsLaunchTests.swift */,
 			);
 			path = "Blockchain Simulator 2UITests";
+			sourceTree = "<group>";
+		};
+		4AAF1E022B4528620064A192 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4AAF1E002B4527E00064A192 /* MenuItem.swift */,
+				4AAF1E042B45289B0064A192 /* HashAlgorithms.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4AAF1E032B4528760064A192 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4AAF1DD12B4525020064A192 /* MainNavigationView.swift */,
+				4AAF1DFC2B4525700064A192 /* HashView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +284,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AAF1DD22B4525020064A192 /* ContentView.swift in Sources */,
+				4AAF1DFD2B4525700064A192 /* HashView.swift in Sources */,
+				4AAF1DD22B4525020064A192 /* MainNavigationView.swift in Sources */,
 				4AAF1DD02B4525020064A192 /* Blockchain_Simulator_2App.swift in Sources */,
+				4AAF1E012B4527E00064A192 /* MenuItem.swift in Sources */,
+				4AAF1E052B45289B0064A192 /* HashAlgorithms.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
