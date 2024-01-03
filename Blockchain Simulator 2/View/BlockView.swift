@@ -119,8 +119,6 @@ struct BlockView: View {
     }
 }
 
-
-
 #Preview {
     BlockView()
 }
