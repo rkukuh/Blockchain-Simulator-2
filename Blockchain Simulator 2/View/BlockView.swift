@@ -20,7 +20,7 @@ struct BlockView: View {
                 .padding()
 
             VStack(alignment: .leading) {
-                Text("Data:")
+                Text("Data")
                     .font(.headline)
                 TextEditor(text: $data)
                     .frame(minHeight: 100)
@@ -32,10 +32,16 @@ struct BlockView: View {
             Text("Hash: \(hashResult)")
                 .padding()
 
-            Button("Start Mining") {
-                mineBlock()
+            if isMining {
+                ProgressView("Mining in process")
+                    .progressViewStyle(CircularProgressViewStyle())
+                    .padding()
+            } else {
+                Button("Start Mining") {
+                    startMining()
+                }
+                .padding()
             }
-            .padding()
         }
         .padding()
         .background(isMining ? Color.green.opacity(0.5) : Color.red.opacity(0.5))
@@ -49,8 +55,19 @@ struct BlockView: View {
         isMining = false
     }
 
+    private func startMining() {
+        isMining = true
+
+        // Run mining in background to prevent UI freezing
+        DispatchQueue.global(qos: .userInitiated).async {
+            self.mineBlock()
+            DispatchQueue.main.async {
+                self.isMining = false
+            }
+        }
+    }
+
     private func mineBlock() {
-        isMining = false
         nonce = 0
         var found = false
         while !found {
@@ -59,13 +76,13 @@ struct BlockView: View {
             if hash.hasPrefix("0000") {
                 found = true
                 hashResult = hash
-                isMining = true
             } else {
                 nonce += 1
             }
         }
     }
 }
+
 
 #Preview {
     BlockView()
