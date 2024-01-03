@@ -11,25 +11,38 @@ import CryptoKit
 struct HashView: View {
     @State private var inputText: String = "You may change this text and see for yourself."
     @State private var selectedAlgorithm: HashAlgorithm = .sha256
-    @State private var hashedText: String = SHA256.hash(data: Data("You may change this text and see for yourself.".utf8)).compactMap { String(format: "%02x", $0) }.joined()
+    @State private var hashedText: String = ""
     
     var body: some View {
         VStack {
             TextEditor(text: $inputText)
                 .frame(minHeight: 100)
-                .padding()
+                .onChange(of: inputText) { 
+                    updateHash()
+                }
+            
             Picker("Algorithm", selection: $selectedAlgorithm) {
                 Text("SHA256").tag(HashAlgorithm.sha256)
                 Text("SHA512").tag(HashAlgorithm.sha512)
             }
             .pickerStyle(SegmentedPickerStyle())
-            Button("Hash It!") {
-                hashedText = hash(input: inputText, algorithm: selectedAlgorithm)
+            .onChange(of: selectedAlgorithm) {
+                updateHash()
             }
-            Text(hashedText)
+            
+            GroupBox(label: Text("Hashed Result")) {
+                Text(hashedText)
+                    .padding()
+                    .frame(maxWidth: .infinity, alignment: .leading)
+            }
         }
         .padding()
         .navigationTitle("Hash")
+        .onAppear(perform: updateHash)
+    }
+    
+    private func updateHash() {
+        hashedText = hash(input: inputText, algorithm: selectedAlgorithm)
     }
     
     private func hash(input: String, algorithm: HashAlgorithm) -> String {
