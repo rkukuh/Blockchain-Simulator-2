@@ -58,8 +58,11 @@ struct BlockView: View {
                 .padding()
             }
             
-            Text("Hash: \(hashResult)")
-                .padding()
+            GroupBox(label: Text("Hashed Result")) {
+                Text(hashResult)
+                    .padding()
+                    .frame(maxWidth: .infinity, alignment: .leading)
+            }
         }
         .padding()
         .background(isHashCorrect ? Color.green.opacity(0.5) : Color.red.opacity(0.5))
