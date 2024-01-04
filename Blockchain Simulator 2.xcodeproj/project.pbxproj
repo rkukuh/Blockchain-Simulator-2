@@ -20,6 +20,8 @@
 		4AAF1E0B2B45373F0064A192 /* BlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAF1E0A2B45373F0064A192 /* BlockView.swift */; };
 		4AAF1E0D2B45B19D0064A192 /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAF1E0C2B45B19D0064A192 /* Block.swift */; };
 		4AAF1E102B45B1E90064A192 /* BlockViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAF1E0F2B45B1E90064A192 /* BlockViewModel.swift */; };
+		4AAF1E132B4649EE0064A192 /* Hash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAF1E122B4649EE0064A192 /* Hash.swift */; };
+		4AAF1E152B464A0F0064A192 /* HashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAF1E142B464A0F0064A192 /* HashViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		4AAF1E0A2B45373F0064A192 /* BlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockView.swift; sourceTree = "<group>"; };
 		4AAF1E0C2B45B19D0064A192 /* Block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
 		4AAF1E0F2B45B1E90064A192 /* BlockViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BlockViewModel.swift; path = ../../../../../../../BlockViewModel.swift; sourceTree = "<group>"; };
+		4AAF1E122B4649EE0064A192 /* Hash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hash.swift; sourceTree = "<group>"; };
+		4AAF1E142B464A0F0064A192 /* HashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +150,7 @@
 		4AAF1E022B4528620064A192 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				4AAF1E122B4649EE0064A192 /* Hash.swift */,
 				4AAF1E0C2B45B19D0064A192 /* Block.swift */,
 				4AAF1E112B4649570064A192 /* Enums */,
 			);
@@ -165,6 +170,7 @@
 		4AAF1E0E2B45B1C90064A192 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				4AAF1E142B464A0F0064A192 /* HashViewModel.swift */,
 				4AAF1E0F2B45B1E90064A192 /* BlockViewModel.swift */,
 			);
 			path = ViewModels;
@@ -311,11 +317,13 @@
 			files = (
 				4AAF1DFD2B4525700064A192 /* HashView.swift in Sources */,
 				4AAF1E0D2B45B19D0064A192 /* Block.swift in Sources */,
+				4AAF1E152B464A0F0064A192 /* HashViewModel.swift in Sources */,
 				4AAF1DD22B4525020064A192 /* MainView.swift in Sources */,
 				4AAF1DD02B4525020064A192 /* Blockchain_Simulator_2App.swift in Sources */,
 				4AAF1E012B4527E00064A192 /* MenuItem.swift in Sources */,
 				4AAF1E0B2B45373F0064A192 /* BlockView.swift in Sources */,
 				4AAF1E102B45B1E90064A192 /* BlockViewModel.swift in Sources */,
+				4AAF1E132B4649EE0064A192 /* Hash.swift in Sources */,
 				4AAF1E052B45289B0064A192 /* HashAlgorithm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
