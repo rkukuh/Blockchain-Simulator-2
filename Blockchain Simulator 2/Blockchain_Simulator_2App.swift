@@ -11,7 +11,7 @@ import SwiftUI
 struct Blockchain_Simulator_2App: App {
     var body: some Scene {
         WindowGroup {
-            MainNavigationView()
+            MainView()
         }
     }
 }

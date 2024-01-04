@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MainNavigationView: View {
+struct MainView: View {
     @State private var selectedMenuItem: MenuItem? = .hash
     
     var body: some View {
@@ -40,5 +40,5 @@ struct MainNavigationView: View {
 }
 
 #Preview {
-    MainNavigationView()
+    MainView()
 }
