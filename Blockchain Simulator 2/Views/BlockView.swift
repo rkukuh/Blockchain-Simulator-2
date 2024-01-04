@@ -59,7 +59,9 @@ struct BlockView: View {
                     .padding()
             } else {
                 Button("Start Mining") {
-                    viewModel.mineBlock(algorithm: selectedAlgorithm)
+                    viewModel.mineBlock(algorithm: selectedAlgorithm) {
+                        print("Mining success")
+                    }
                 }
                 .padding()
             }
