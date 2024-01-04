@@ -13,12 +13,15 @@ struct BlockView: View {
     
     init(viewModel: BlockViewModel = BlockViewModel(block: Block())) {
         self.viewModel = viewModel
-        viewModel.block.data = "Satoshi acquire 100 BTC"
     }
 
     var body: some View {
         VStack {
             HStack {
+                Text("Index")
+                TextField("Index", value: $viewModel.block.index, formatter: NumberFormatter())
+                    .padding()
+                
                 Text("Nonce")
                 TextField("Nonce", value: $viewModel.block.nonce, formatter: NumberFormatter())
                     .padding()

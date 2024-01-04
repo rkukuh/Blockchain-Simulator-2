@@ -23,7 +23,7 @@ struct BlockchainView: View {
         .toolbar {
             ToolbarItem(placement: .automatic) {
                 Button(action: {
-                    let newData = "Data \(viewModel.blockchain.count)"
+                    let newData = "Transaction data \(viewModel.blockchain.count)"
                     viewModel.addBlock(data: newData)
                 }) {
                     Image(systemName: "plus")
