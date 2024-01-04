@@ -12,6 +12,8 @@ struct Blockchain_Simulator_2App: App {
     var body: some Scene {
         WindowGroup {
             MainView()
+                .frame(minWidth: 600, maxWidth: .infinity,
+                       minHeight: 500, maxHeight: .infinity)
         }
     }
 }

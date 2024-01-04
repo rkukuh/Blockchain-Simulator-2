@@ -14,7 +14,7 @@ struct BlockchainView: View {
         ScrollView {
             VStack {
                 ForEach(viewModel.blockchain, id: \.index) { block in
-                    BlockView(viewModel: BlockViewModel(block: block))
+                    BlockView(viewModel: BlockViewModel(block: block, showPreviousHash: true))
                 }
             }
             .padding()
@@ -35,4 +35,5 @@ struct BlockchainView: View {
 
 #Preview {
     BlockchainView()
+        .frame(width: .infinity, height: 500)
 }

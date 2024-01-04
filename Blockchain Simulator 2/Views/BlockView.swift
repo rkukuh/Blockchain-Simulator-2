@@ -61,9 +61,15 @@ struct BlockView: View {
                 .padding()
             }
             
+            if viewModel.showPreviousHash {
+                GroupBox(label: Text("Previous Hash")) {
+                    Text(viewModel.block.previousHash)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                }
+            }
+            
             GroupBox(label: Text("Hashed Result")) {
                 Text(viewModel.block.hash)
-                    .padding()
                     .frame(maxWidth: .infinity, alignment: .leading)
             }
         }
