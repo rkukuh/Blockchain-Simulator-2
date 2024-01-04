@@ -24,7 +24,7 @@ struct MainView: View {
                 case .block:
                     BlockView()
                 case .blockchain:
-                    Text("Blockchain View")
+                    BlockchainView()
                 case .distributed:
                     Text("Distributed View")
                 case .tokens:

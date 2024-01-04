@@ -8,10 +8,11 @@
 import SwiftUI
 
 struct BlockView: View {
-    @ObservedObject var viewModel = BlockViewModel()
+    @ObservedObject var viewModel: BlockViewModel
     @State private var selectedAlgorithm: HashAlgorithm = .sha256
     
-    init() {
+    init(viewModel: BlockViewModel = BlockViewModel(block: Block())) {
+        self.viewModel = viewModel
         viewModel.block.data = "Satoshi acquire 100 BTC"
     }
 

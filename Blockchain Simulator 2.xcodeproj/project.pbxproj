@@ -24,6 +24,7 @@
 		4AAF1E152B464A0F0064A192 /* HashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAF1E142B464A0F0064A192 /* HashViewModel.swift */; };
 		4AAF1E172B464CFA0064A192 /* Blockchain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAF1E162B464CFA0064A192 /* Blockchain.swift */; };
 		4AAF1E192B464D7C0064A192 /* BlockchainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAF1E182B464D7C0064A192 /* BlockchainViewModel.swift */; };
+		4AAF1E1B2B464FDB0064A192 /* BlockchainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAF1E1A2B464FDB0064A192 /* BlockchainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		4AAF1E142B464A0F0064A192 /* HashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashViewModel.swift; sourceTree = "<group>"; };
 		4AAF1E162B464CFA0064A192 /* Blockchain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blockchain.swift; sourceTree = "<group>"; };
 		4AAF1E182B464D7C0064A192 /* BlockchainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockchainViewModel.swift; sourceTree = "<group>"; };
+		4AAF1E1A2B464FDB0064A192 /* BlockchainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockchainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +170,7 @@
 				4AAF1DD12B4525020064A192 /* MainView.swift */,
 				4AAF1DFC2B4525700064A192 /* HashView.swift */,
 				4AAF1E0A2B45373F0064A192 /* BlockView.swift */,
+				4AAF1E1A2B464FDB0064A192 /* BlockchainView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 				4AAF1E152B464A0F0064A192 /* HashViewModel.swift in Sources */,
 				4AAF1DD22B4525020064A192 /* MainView.swift in Sources */,
 				4AAF1DD02B4525020064A192 /* Blockchain_Simulator_2App.swift in Sources */,
+				4AAF1E1B2B464FDB0064A192 /* BlockchainView.swift in Sources */,
 				4AAF1E172B464CFA0064A192 /* Blockchain.swift in Sources */,
 				4AAF1E012B4527E00064A192 /* MenuItem.swift in Sources */,
 				4AAF1E0B2B45373F0064A192 /* BlockView.swift in Sources */,
